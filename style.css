@@ -1,0 +1,232 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: kanit;
+}
+
+.kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.kanit-thin-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.kanit-extralight {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.kanit-extralight-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-medium-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.kanit-semibold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-bold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kanit-extrabold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.kanit-extrabold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.kanit-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.kanit-black-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.548),
+      rgba(0, 0, 0, 0.548)
+    ),
+    url(images/standard-quality-control-collage-concept.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.back-dorp-filter {
+  /* border: 1px solid #000; */
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.151);
+  backdrop-filter: blur(10px);
+}
+
+.header {
+  /* border: 1px solid #000; */
+  width: 100%;
+  height: 50dvh;
+  padding: 10px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header img {
+  width: 100px;
+}
+
+.header h1 {
+  /* border: 1px solid #000; */
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+
+.header p {
+  /* border: 1px solid #000; */
+  color: white;
+  font-size: 1rem;
+  font-weight: 200;
+  width: 100%;
+  text-align: center;
+}
+
+.input-div {
+  /* border: 1px solid #fff; */
+  width: 100%;
+  height: 50dvh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-div form {
+  /* border: 1px solid #f00; */
+  width: 40%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+form .box {
+  /* border: 1px solid #000; */
+  width: 100%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box span {
+  /* border: 1px solid #000; */
+  color: white;
+  width: 30%;
+  font-size: 1.5rem;
+}
+
+.box input {
+  /* border: 1px solid #000; */
+  color: white;
+  width: 80%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.185);
+  backdrop-filter: blur(1px);
+  font-size: 1.5rem;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.329);
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
