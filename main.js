@@ -26,6 +26,18 @@ let cardStatus = document.querySelector("#status");
  * ! VARIABLES SECTION ENDED
  ********************************************************** */
 
+/*********************************************************
+ * ! POPUP CLOSING LOGIC STARTED
+ ********************************************************** */
+
+closeBtn.addEventListener("click", function () {
+  cardMainDiv.style.scale = "0%";
+});
+
+/*********************************************************
+ * ! POPUP CLOSING LOGIC ENDED
+ ********************************************************** */
+
 /**********************************************************
  * ! DATA FETCHING LOGIC STARTED
  ********************************************************* */
@@ -43,8 +55,8 @@ form.addEventListener("submit", function (e) {
     })
     .then((finalRes) => {
       if (finalRes.data[0] !== undefined) {
-        alert("Verified Successfully!!!");
         e.target.btn.innerText = "Verified Successfully!";
+        e.target.btn.style.color = "#14ff2c";
 
         photo.src = finalRes.data[0].Photo;
         Name.innerText = finalRes.data[0].Name;
@@ -56,13 +68,17 @@ form.addEventListener("submit", function (e) {
         expiryDate.innerText = finalRes.data[0].Expiry_Date;
         cardStatus.innerText = finalRes.data[0].Card_Status;
 
-        popup.style.scale = "100%";
+        setTimeout(() => {
+          popup.style.scale = "100%";
+          e.target.btn.style.color = "#fff";
+        }, 2000);
       } else {
-        alert("No Data Found");
         e.target.btn.innerText = "Unverified";
+        e.target.btn.style.color = "#ff3838";
       }
       setTimeout(() => {
         e.target.btn.innerText = "Verify";
+        e.target.btn.style.color = "#fff";
       }, 2000);
       form.reset();
     })
